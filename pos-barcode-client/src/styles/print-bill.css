@@ -1,0 +1,6 @@
+@media print {
+    body * { visibility: hidden !important; }
+    .print-bill, .print-bill * { visibility: visible !important; }
+    .print-bill { position: absolute; top: 0; left: 0; width: 100vw !important; margin: 0 !important; box-shadow: none !important; }
+  }
+  
