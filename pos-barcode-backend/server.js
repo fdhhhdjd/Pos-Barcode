@@ -6,7 +6,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// API lấy thông tin sản phẩm theo barcode
 app.get('/product/:barcode', (req, res) => {
     const product = products.find(p => p.barcode === req.params.barcode);
     if (product) {
